@@ -12,7 +12,7 @@ int main() {
 	}
 	for (int i = 0; i < time; i++) {
 		float val = dBReader.GetCurrentdBLevel();
-		std::cout << "DbReader got : " << val << std::endl;
+		std::cout << "[Decibel]: Current db level: " << val << std::endl;
 		std::this_thread::sleep_for(std::chrono::seconds(1));
 	}
 	return 0;
